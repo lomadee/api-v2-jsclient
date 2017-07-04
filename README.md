@@ -28,5 +28,5 @@ lomadeeAPIv2.search('/offer/_search?keyword=tv', appToken, sourceId, function(re
 ```
 
 ** Veja que as query's são o fragmento do path das API's. Veja todas as API's disponíveis aqui:
-https://developer.lomadee.com/afiliados/ofertas/
-https://developer.lomadee.com/afiliados/cupons/
+** https://developer.lomadee.com/afiliados/ofertas/
+** https://developer.lomadee.com/afiliados/cupons/
