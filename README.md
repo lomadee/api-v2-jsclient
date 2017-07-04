@@ -5,24 +5,29 @@ Este client foi desenvolvido para auxilar o desenvolvimento de sites utilizando 
 Adicione na tag <head> de seu site a seguinte configuração:
 ```html
 <script type="text/javascript" charset="UTF-8" src="https://tagmanager.lomadee.com/client-api-v2.js"></script>
+<script>
+	var lomadee_api_setup = {
+		enviromnent : '', //sandbox ou production
+		appToken : '',
+		sourceId : ''
+	}
+</script>
 ```
 
 ## Método para realização de buscas na API
 ```javascript
 var query = '';
-var appToken = '';
-var sourceId = 0;
 
-lomadeeAPIv2.search(query, appToken, sourceId, function(response) {});
+lomadeeAPIv2.search(query, function(response) {});
 ```
 
 ## Exemplos de querys
 ```javascript
-lomadeeAPIv2.search('/offer/_bestsellers', appToken, sourceId, function(response) {
+lomadeeAPIv2.search('/offer/_bestsellers', function(response) {
 	console.log(response);
 });
 
-lomadeeAPIv2.search('/offer/_search?keyword=tv', appToken, sourceId, function(response) {
+lomadeeAPIv2.search('/offer/_search?keyword=tv', function(response) {
 	console.log(response);
 });
 ```
